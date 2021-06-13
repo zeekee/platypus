@@ -30,12 +30,6 @@ namespace Platypus_2
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Cod = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tel1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tel2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ContactName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -69,62 +63,16 @@ namespace Platypus_2
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Cod,
-            this.Name,
-            this.Address,
-            this.Tel1,
-            this.tel2,
-            this.ContactName});
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dataGridView1.Location = new System.Drawing.Point(0, 264);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(1096, 324);
             this.dataGridView1.TabIndex = 9;
-            // 
-            // Cod
-            // 
-            this.Cod.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Cod.HeaderText = "Codigo";
-            this.Cod.Name = "Cod";
-            this.Cod.ReadOnly = true;
-            // 
-            // Name
-            // 
-            this.Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Name.HeaderText = "Nombre";
-            this.Name.Name = "Name";
-            this.Name.ReadOnly = true;
-            // 
-            // Address
-            // 
-            this.Address.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Address.HeaderText = "Dirección";
-            this.Address.Name = "Address";
-            this.Address.ReadOnly = true;
-            // 
-            // Tel1
-            // 
-            this.Tel1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Tel1.HeaderText = "Teléfono 1";
-            this.Tel1.Name = "Tel1";
-            this.Tel1.ReadOnly = true;
-            // 
-            // tel2
-            // 
-            this.tel2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.tel2.HeaderText = "Telefono 2";
-            this.tel2.Name = "tel2";
-            this.tel2.ReadOnly = true;
-            // 
-            // ContactName
-            // 
-            this.ContactName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ContactName.HeaderText = "Nombre del contacto";
-            this.ContactName.Name = "ContactName";
-            this.ContactName.ReadOnly = true;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // groupBox3
             // 
@@ -403,6 +351,7 @@ namespace Platypus_2
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.dataGridView1);
+            this.Name = "ProveedoresControl";
             this.Size = new System.Drawing.Size(1096, 588);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox3.ResumeLayout(false);
@@ -415,12 +364,6 @@ namespace Platypus_2
 
         #endregion
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Cod;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Address;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Tel1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tel2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ContactName;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;

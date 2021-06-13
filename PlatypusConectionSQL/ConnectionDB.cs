@@ -6,8 +6,8 @@ namespace ConectionSQL
 {
     public class ConnectionDB
     {
-        const string sqlName = "DESKTOP-7MMV0ST\\SQLEXPRESS"; //TODO: Eliminar mi ruta antes de comitear
-        const string dbName = "PlatypusDB"; //TODO: Eliminar mi ruta antes de comitear
+        const string sqlName = "DESKTOP-7MMV0ST\\SQLEXPRESS";
+        const string dbName = "PlatypusDB";
 
         string stringConnection = $"Data Source={sqlName};Initial Catalog={dbName}; Integrated Security=True";
         public SqlConnection connectDB = new SqlConnection();

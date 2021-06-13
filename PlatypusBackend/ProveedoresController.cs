@@ -22,7 +22,7 @@ namespace BackendPlatypus
 
         public DataTable Fill()
         {
-            return SqlController.NewQuery($"select * from Stock");
+            return SqlController.NewQuery($"select * from Proveedores");
         }
 
         public void DeleteItem(string id)
