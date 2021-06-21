@@ -24,7 +24,20 @@ CREATE TABLE Proveedores (
 	TotalMoneyPaid float
 );
 
+--- TABLA EGRESOS ---
+
+CREATE TABLE Egresos (
+    Id int NOT NULL PRIMARY KEY,
+    ProveedorName varchar(255),
+	totalCash float,
+	Code int FOREIGN KEY REFERENCES Proveedores (Code),
+	created_at DATE DEFAULT CURRENT_TIMESTAMP
+);
+
+
+select * from stock
 
 select * from proveedores
 
-select * from stock
+select * from Egresos
+

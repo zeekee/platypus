@@ -20,3 +20,4 @@ C:\Users\Ezequiel\Desktop\C#Projects\Platypus\PlatypusConectionSQL\obj\Debug\net
 C:\Users\Ezequiel\Desktop\C#Projects\Platypus\PlatypusConectionSQL\obj\Debug\net5.0-windows\ConnectionSQL.dll
 C:\Users\Ezequiel\Desktop\C#Projects\Platypus\PlatypusConectionSQL\obj\Debug\net5.0-windows\ref\ConnectionSQL.dll
 C:\Users\Ezequiel\Desktop\C#Projects\Platypus\PlatypusConectionSQL\obj\Debug\net5.0-windows\ConnectionSQL.pdb
+C:\Users\Ezequiel\Desktop\C#Projects\Platypus\PlatypusConectionSQL\obj\Debug\net5.0-windows\ConnectionSQL.csprojAssemblyReference.cache

@@ -31,6 +31,8 @@ namespace Platypus_2
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -76,6 +78,8 @@ namespace Platypus_2
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.textBox8);
+            this.groupBox3.Controls.Add(this.label2);
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.label4);
@@ -100,6 +104,23 @@ namespace Platypus_2
             this.groupBox3.TabIndex = 11;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Detalles";
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(127, 173);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(168, 26);
+            this.textBox8.TabIndex = 31;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(15, 169);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(50, 20);
+            this.label2.TabIndex = 30;
+            this.label2.Text = "Email:";
             // 
             // label7
             // 
@@ -131,35 +152,35 @@ namespace Platypus_2
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(127, 201);
+            this.textBox7.Location = new System.Drawing.Point(127, 205);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(168, 26);
             this.textBox7.TabIndex = 24;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(127, 164);
+            this.textBox6.Location = new System.Drawing.Point(127, 141);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(168, 26);
             this.textBox6.TabIndex = 23;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(127, 127);
+            this.textBox5.Location = new System.Drawing.Point(127, 109);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(168, 26);
             this.textBox5.TabIndex = 22;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(127, 90);
+            this.textBox4.Location = new System.Drawing.Point(127, 77);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(168, 26);
             this.textBox4.TabIndex = 21;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(127, 53);
+            this.textBox3.Location = new System.Drawing.Point(127, 45);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(168, 26);
             this.textBox3.TabIndex = 20;
@@ -175,6 +196,7 @@ namespace Platypus_2
             this.button4.TabIndex = 18;
             this.button4.Text = "Modificar";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -187,12 +209,13 @@ namespace Platypus_2
             this.button3.TabIndex = 12;
             this.button3.Text = "Eliminar";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label24
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label24.Location = new System.Drawing.Point(15, 197);
+            this.label24.Location = new System.Drawing.Point(15, 199);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(95, 40);
             this.label24.TabIndex = 16;
@@ -202,7 +225,7 @@ namespace Platypus_2
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(15, 162);
+            this.label3.Location = new System.Drawing.Point(15, 139);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 20);
             this.label3.TabIndex = 10;
@@ -212,7 +235,7 @@ namespace Platypus_2
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label11.Location = new System.Drawing.Point(15, 57);
+            this.label11.Location = new System.Drawing.Point(15, 49);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(72, 20);
             this.label11.TabIndex = 1;
@@ -242,7 +265,7 @@ namespace Platypus_2
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label12.Location = new System.Drawing.Point(15, 92);
+            this.label12.Location = new System.Drawing.Point(15, 79);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(80, 20);
             this.label12.TabIndex = 2;
@@ -252,7 +275,7 @@ namespace Platypus_2
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label13.Location = new System.Drawing.Point(15, 127);
+            this.label13.Location = new System.Drawing.Point(15, 109);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(87, 20);
             this.label13.TabIndex = 3;
@@ -315,6 +338,7 @@ namespace Platypus_2
             this.button1.TabIndex = 10;
             this.button1.Text = "Agregar nuevo";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button7
             // 
@@ -327,6 +351,7 @@ namespace Platypus_2
             this.button7.TabIndex = 9;
             this.button7.Text = "Buscar";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click_1);
             // 
             // textBox1
             // 
@@ -390,5 +415,7 @@ namespace Platypus_2
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Label label2;
     }
 }
